@@ -1,0 +1,14 @@
+<button onclick="gen()">🗯 Get Quote</button>
+<p id="quote"></p>
+
+<script>
+const quotes = [
+  "Talk is cheap. Show me the code.",
+  "Programs must be written for people to read.",
+  "First, solve the problem. Then, write the code."
+];
+function gen() {
+  document.getElementById("quote").textContent =
+    quotes[Math.floor(Math.random() * quotes.length)];
+}
+</script>
