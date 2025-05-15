@@ -1,0 +1,9 @@
+<input id="input" oninput="count()" maxlength="100">
+<p id="count">0 / 100</p>
+
+<script>
+function count() {
+  const val = document.getElementById("input").value.length;
+  document.getElementById("count").textContent = `${val} / 100`;
+}
+</script>
