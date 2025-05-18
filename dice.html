@@ -1,0 +1,10 @@
+<button onclick="roll()">🎲 Roll</button>
+<p id="result"></p>
+
+<script>
+function roll() {
+  const d1 = Math.floor(Math.random() * 6) + 1;
+  const d2 = Math.floor(Math.random() * 6) + 1;
+  document.getElementById("result").textContent = `You rolled ${d1} + ${d2} = ${d1 + d2}`;
+}
+</script>
